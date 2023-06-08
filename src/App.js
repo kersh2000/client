@@ -8,7 +8,7 @@ function App() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('/users')
+    axios.get('https://cloud-project-server.onrender.com/users')
       .then(res => {
         setUsers(res.data)
       }).catch( error => {
