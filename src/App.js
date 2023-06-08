@@ -16,10 +16,11 @@ function App() {
       });
   }, []);
 
+  console.log(users);
+
   return (
     <div className="App">
       <h1>User App</h1>
-
       {
         users.map(user => {
           <div key={user.id}>
